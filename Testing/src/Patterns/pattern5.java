@@ -16,7 +16,7 @@ public class pattern5
 				System.out.print("*");
 			}
 			System.out.println();
-			
+			System.out.println("Test");
 			
 		}
 	
