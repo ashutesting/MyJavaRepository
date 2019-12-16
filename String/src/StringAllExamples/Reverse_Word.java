@@ -2,27 +2,24 @@ package StringAllExamples;
 
 import java.util.Scanner;
 
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
 public class Reverse_Word 
 {
 	public static void reverse_each_word(String input)
 	{
 		System.out.println("My given string is: "+ input);
 		String[] splitword= input.split(" ");
-		int length= splitword.length;
-		for(int i=0; i<=length-1; i++)
+		String Reverse_String= " ";
+		
+		for(String w: splitword)
 		{
+			StringBuffer sb= new StringBuffer(w);
 			
-            String partial= splitword[i];
-            String reverse= " ";
-			for(int j=partial.length()-1; j>=0; j--)
-			{
-				
-				reverse= reverse+partial.charAt(j);
-				System.out.println(reverse);
-				
-			}
+			Reverse_String= Reverse_String+ sb.reverse() + " ";
 			
 		}
+		System.out.println("Reverse String by word is :" +Reverse_String);
 		
 		
 	}
