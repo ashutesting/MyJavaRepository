@@ -7,7 +7,7 @@ public class Capitilize
 	public void capitilize_word(String s1)
 	{
 		System.out.println(s1);
-		String[] word= s1.split("\\s");
+		String[] word= s1.split(" ");
 		String capitilize_string= "";
 		
 		for(String i: word)
@@ -17,8 +17,8 @@ public class Capitilize
 			capitilize_string = capitilize_string +first.toUpperCase()+afterfirst+ " ";
 		//System.out.println(i);
 		}
-		String S= capitilize_string.trim();
-		System.out.println(S);
+		//String S= capitilize_string.trim();
+		System.out.println(capitilize_string);
 		
 		
 	}
